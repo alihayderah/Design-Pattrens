@@ -1,0 +1,45 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package singletonclass;
+
+/**
+ *
+ * @author fa19-bse-096
+ */
+public class SingletonCLass {
+
+    /**
+     * @param args the command line arguments
+     */
+    static int counter=0;
+    private static SingletonCLass object=new SingletonCLass();
+    String Creater_Name="";
+    
+    
+    private SingletonCLass()
+    {
+          Increment_Counter();
+    }
+    
+    public static void Increment_Counter()
+    {
+       ++counter; 
+    }
+    
+    public static SingletonCLass getInstance()
+    {
+         return object;
+    }
+    
+    public String setCreaterName(String name)
+    {
+          return object.Creater_Name=name;
+    }
+    
+     
+    
+}
