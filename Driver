@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package singletonclass;
+
+/**
+ *
+ * @author fa19-bse-096
+ */
+public class Driver {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        SingletonCLass object= SingletonCLass.getInstance();
+        object.setCreaterName("Ali Haider");
+        System.out.println("Serial no "+SingletonCLass.counter+"\t"+"Creater Name  :     "+object.Creater_Name);
+        
+        SingletonCLass object_01= SingletonCLass.getInstance();
+        object_01.setCreaterName("Sir Rashid Mehmood");
+        System.out.println("Serial no "+SingletonCLass.counter+"\t"+"Creater Name  :     "+object_01.Creater_Name);
+       
+        
+    }
+    
+}
